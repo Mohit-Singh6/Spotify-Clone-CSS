@@ -29,8 +29,6 @@ It includes:
 
 ## 🖼️ UI Preview
 
-> *(Screenshot preview of the project — replace with your own image)*
-
 <p align="center">
   <img src="./assets/preview.png" alt="Spotify Clone Preview" width="85%">
 </p>
