@@ -49,9 +49,6 @@ spotify-clone-css/
 
 ---
 
-
----
-
 ## ✨ Features
 
 - 🎨 Spotify-inspired design and layout
@@ -73,8 +70,8 @@ No installation or server needed — simply open the HTML file in your browser:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/spotify-clone-css.git
-cd spotify-clone-css
+git clone https://github.com/Mohit-Singh6/Spotify-Clone-CSS.git
+cd Spotify-Clone-CSS
 
 # Open in your browser (Windows)
 start index.html
