@@ -1,0 +1,646 @@
+* {
+    background-color: #000000;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+
+.navTop {
+    padding: 0.6rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    top: 0rem;
+    position: sticky;
+    z-index: 10;
+}
+
+.fa-spotify {
+    font-size: 2.5rem;
+    padding-left: 1.4rem;
+    color: white;
+    justify-self: center;
+    align-self: center;
+    background-color: black;
+    cursor: pointer;
+}
+
+.fa-house {
+    color: white;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6.25rem;
+    height: 3rem;
+    width: 3rem;
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.2);
+    opacity: 0.8;
+    transition: 0.1s;
+    flex-shrink: 0;
+}
+
+.searchbox {
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255,255,255,0.2);
+    border: 0.5px solid black;
+    border-radius: 5.5rem;
+    margin-left: 2.4rem;
+    transition: 0.5s;
+}
+
+
+.shortct {
+    color:white;
+    opacity: 0;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.searchbox:hover {
+    border: 0.5px solid white;
+}
+
+.searchbox:hover .shortct {
+    opacity: 0.5;
+}
+
+#search {
+    display:inline-block;
+    height: 2.5rem;
+    width: 12.5rem;
+    background-color: transparent;
+    border: 0px solid white;
+}
+
+
+.fa-magnifying-glass {
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+    flex-shrink: 0;
+    opacity: 0.8;
+    transition: 0.5s;
+
+}
+
+.toptext {
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    margin-left: 9rem;
+    display: flex;
+}
+
+.ttext {
+    padding: 0.2rem;
+    opacity: 0.6;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.ttext:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ttext2 {
+    font-weight: 400;
+}
+
+.stndline {
+    font-weight: 100;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.fa-house:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass:hover {
+    opacity: 1;
+    cursor: pointer;
+    border: 0.25px solid white;
+}
+
+.signup {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 0.9rem;
+    width: 6.2rem;
+    background-color: black;
+    color: white;
+    border: 0px solid black;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.1s;
+}
+
+.signup:hover {
+    opacity: 1;
+    font-size: 1rem;
+}
+
+.login {
+    font-weight: 700;
+    font-size: 0.9rem;
+    width: 6.2rem;
+    height: 3rem;
+    background-color: white;
+    color: black;
+    border: 0px solid black;
+    border-radius: 1.9rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.login:hover {
+    opacity: 0.8;
+    transform: scale(1.05)
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-gap: 0.6rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.library {
+    background-color: #121212;
+    border: 1px solid black;
+    border-radius: 1%;
+    margin-left: 0.6rem;
+    position: fixed;
+    top: 5rem;
+    bottom: 0px;
+    left: 0px;
+    width: 28%;
+    overflow-y: auto;
+}
+
+
+.main {
+    grid-column-start: 2;
+    background-color: #121212;
+    margin-right: 0.6rem;
+    border: 1px solid black;
+    border-radius: 1%;
+    margin-left: 0.5%;
+}
+
+.libHead {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    height: 2.1rem;
+}
+
+.fa-plus {
+    color: white;
+    margin-right: 0.6rem;
+    font-size: 1rem;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.1rem;
+    width: 2.1rem;
+    border: 0.25px solid 121212;
+    border-radius: 50%;
+    background-color: #121212;
+    opacity: 0.7;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.libtext {
+    background-color: #121212;
+    margin-left: 1.4rem;
+    font-weight: 600;
+    cursor: default;
+}
+
+.fa-plus:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    opacity: 1;
+}
+
+.firstpl {
+    margin: 0.6rem;
+    margin-top: 1.4rem;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    color: white;
+    border: 0px solid black;
+    border-radius: 5px;
+    /* height: rem; */
+}
+
+.line1 {
+    background-color: #1e1e1e;
+    font-weight: 600;
+}
+
+.line2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1.4rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: #1e1e1e;
+    width: 300px;
+}
+
+.playlist {
+    font-weight: 750;
+    font-size: 0.75rem;
+    width: 7rem;
+    height: 2.2rem;
+    background-color: white;
+    color: black;
+    border: 0px solid black;
+    border-radius: 1.9rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.playlist:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.podcast {
+    width: 9.5rem;
+}
+
+.extras {
+    background-color: #121212;
+    color: white;
+    font-size: 0.75rem;
+    margin-top: 0.6rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.txt {
+    background-color: #121212;
+    padding: 3px;
+    opacity: 0.5;
+}
+
+.txt:hover {
+    opacity: 1;
+}
+
+.lang {
+    margin-top: 2.8rem;
+    margin-left: 1.9rem;
+    background-color: #121212;
+    color: white;
+    border: 0.5px solid white;
+    font-size: 0.8rem;
+}
+
+.lang:hover {
+    border: 1.5px solid white;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 0.6rem;
+    padding: 1.7rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background: linear-gradient(#202020, #121212);
+    overflow-y: auto;
+}
+
+.upperMain {
+    background-color: transparent;
+    color: white;
+}
+
+.upperHead {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend {
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.trend:hover {
+    text-decoration: underline;
+}
+
+.rightT {
+    background-color: transparent;
+    margin-left: 1.4rem;
+    font-weight: 600;
+    cursor: default;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.rightT:hover {
+    text-decoration: underline;
+}
+
+.songs {
+    margin-top: 1.4rem;
+    display: grid;
+    grid-auto-flow: column;
+    background-color: transparent;
+    padding: 7px;
+}
+
+.songcds {
+    height: 15.5rem;
+    width: 11rem;
+    background-color: transparent;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding-top: 7px;
+    border: 0px solid #121212;
+    border-radius: 5px;
+}
+
+.cdimage {
+    height: 70%;
+    width: 92%;
+    border-radius: 4px;
+    display: grid;
+    justify-self: center;
+}
+
+.cdtxt {
+    background-color: transparent;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    font-size: 1rem;
+}
+
+.cdtxt2 {
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    font-size: 0.8rem;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.cdtxt:hover {
+    text-decoration: underline;
+}
+
+.cdtxt2:hover {
+    text-decoration: underline;
+}
+
+.songcds:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+
+.lowerMain {
+    background-color: transparent;
+    color: white;
+    margin-top: 5rem;
+}
+
+.artimage {
+    border: 0px solid black;
+    border-radius: 50%;
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4.1rem;
+    background-color: #000000;
+    display: flex;
+    z-index: 99;
+    border-top: 1px solid #2a2a2a;
+}
+
+.songthmb {
+    width: 25%;
+    display: flex;
+}
+
+.dayimg {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+.daylight {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.daylight h4 {
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.daylight p {
+    opacity: 0.7;
+}
+
+.heart {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin-left: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.miniP {
+    width: 27px;
+    height: 27px;
+    align-self: center;
+    margin-left: 10px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.navbot {
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bottext {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.btext {
+    color: white;
+    opacity: 0.6;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.01s;
+    margin-bottom: -4px;
+}
+
+.btext:hover {
+    opacity: 1;
+}
+
+.play {
+    font-size: 2.2rem;
+    opacity: 1;
+    transition: 0.1s;
+    background-color: transparent;
+}
+
+.play:hover {
+    transform: scale(1.05);
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    margin-top:10px;
+}
+
+.line {
+    width: 22rem;
+    height: 4px;
+    background-color: #404040;
+    border-radius: 2px;
+    margin-top: 0.6rem;
+    color: gray;
+    appearance: none;
+}
+
+.slider {
+    width: 13rem;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    margin-top: -8px;
+    
+}
+
+.volume {
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.vol {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.control1 {
+    width: 25px;
+    height: 37px;
+    opacity: 0.8;
+}
+
+.control2 {
+    width: 19px;
+    height: 19px;
+    opacity: 0.6;
+}
+
+.control3 {
+    width: 15px;
+    height: 13px;
+    opacity: 0.7;
+}
+
+.linev {
+    margin-top: -2px;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.sliderv {
+    margin-top: 0px;
+    width: 25px;
+}
+
+.vol:hover {
+    opacity: 1;
+}
+
+.heart:hover,.miniP:hover {
+    opacity: 1;
+}
+
+
+@media (max-width:1068px) {
+    #search {
+        display: none;
+    }
+    
+    .searchbox {
+        width: 47px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ttext2, .stndline {
+        display: none;
+    }
+}

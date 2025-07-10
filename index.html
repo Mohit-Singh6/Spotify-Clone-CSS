@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=repeat" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navTop">
+            <i class="fa-brands fa-spotify"></i>
+            <i class="fa-solid fa-house"></i>
+            <div class="searchbox">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" placeholder="What do you want to play?">
+                <p class="shortct">Ctrl+K</p>
+            </div>
+            <div class="toptext">
+                <span class="ttext">Premium</span>
+                <span class="ttext">Support</span>
+                <span class="ttext">Download&nbsp;&nbsp;</span>
+                <span class="stndline">|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="ttext ttext2"><i class="fa-regular fa-circle-down"></i> Install App</span>
+            </div>
+            <button class="signup">Sign up</button>
+            <button class="login">Log in</button>
+        </div>
+        <div class="content">
+            <div class="library">
+                <div class="library library2">
+                    <br>
+                    <div class="libHead">
+                        <span class="libtext">Your library</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="firstpl">
+                        <div class="line1">Create your first playlist</div>
+                        <div class="line2">It's easy we will help you</div>
+                        <button class="playlist">Create playlist</button>
+                    </div>
+                    <div class="firstpl">
+                        <div class="line1">Let's find some podcasts to follow</div>
+                        <div class="line2">We will keep you updated on new episodes</div>
+                        <button class="playlist podcast">Browse podcasts</button>
+                    </div>
+
+                    <div class="extras" style="margin-top: 180px;">
+                        <span class="txt">Legal</span>
+                        <span class="txt">Safety & privacy Center</span>
+                        <span class="txt">Privacy Policy</span>
+                        <span class="txt">Cookies</span>
+                    </div>
+                    <div class="extras">
+                        <span class="txt">About Ads</span>
+                        <span class="txt">Accessibility</span>
+                    </div>
+                    <button class="playlist lang"><i class="fa-solid fa-globe"></i> &nbsp;&nbsp;English</button>
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="upperMain">
+                    <div class="upperHead">
+                        <span class="libtext trend">Trending Songs</span>
+                        <span class="rightT">Show All</span>
+                    </div>
+                    <div class="songs">
+                        <div class="songcds">
+                            <img class="cdimage" src="assets/card2img.jpeg">
+                            <span class="cdtxt">Best of 2025</span>
+                            <span class="cdtxt2">Various artists</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage" src="assets/card1img.jpeg">
+                            <span class="cdtxt">Bollywood top 50</span>
+                            <span class="cdtxt2">Various artists</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage" src="assets/card3img.jpeg">
+                            <span class="cdtxt">Popular Old Songs</span>
+                            <span class="cdtxt2">Various artists</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage" src="assets/card4img.jpeg">
+                            <span class="cdtxt">Naa Ready</span>
+                            <span class="cdtxt2">Anirudh Ravichander, Thalapthy Vijay &...</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage" src="assets/card5img.jpeg">
+                            <span class="cdtxt">Top Global Songs</span>
+                            <span class="cdtxt2">Ed Sheeren, The Weeknd &...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lowerMain">
+                    <div class="upperHead lowerHead">
+                        <span class="libtext trend">Popular artists</span>
+                        <span class="rightT">Show All</span>
+                    </div>
+                    <div class="songs">
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca">
+                            <span class="cdtxt">Pritam</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/98/Nenje_Ezhu_at_Chennai_%28cropped%29.jpg">
+                            <span class="cdtxt">A.R. Rahman</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://media.insider.in/image/upload/c_crop,g_custom/v1728462701/yiwwlrbe78ahhohjjmum.jpg">
+                            <span class="cdtxt">Arijit Singh</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202501/sachin-and-jigar-172331928-1x1.jpg?VersionId=d6.fg1ZNmaaeUUTmF_XNhNdu4yUox0kx">
+                            <span class="cdtxt">Sachin-Jigar</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://i.scdn.co/image/ab6761610000e5eb90b6c3d093f9b02aad628eaf">
+                            <span class="cdtxt">Vishal-Shekhar</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                    </div>
+
+                    <div class="songs">
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL8ThX5FkjBrXPUx53GC0BQ77cxPp4skz9mw&s">
+                            <span class="cdtxt">Anirudh Ravichander</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG7wO5xMjNcnWKt0KzcuumKMSDeaKj38TQiQ&s">
+                            <span class="cdtxt">Atif Aslam</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://i.scdn.co/image/ab6761610000e5eb8de0e6e7e55d7773931ab7f4">
+                            <span class="cdtxt">Udit Narayan</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://i.scdn.co/image/ab6761610000e5ebbc7e4fffd515b47ff1ebbc1f">
+                            <span class="cdtxt">Yo Yo Honey Singh</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                        <div class="songcds">
+                            <img class="cdimage artimage"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThgTTV1LifZxSORWoKFpWJwhS2YstqOPtEgQ&s">
+                            <span class="cdtxt">Jubin Nautiyal</span>
+                            <br>
+                            <span class="cdtxt2">Artist</span>
+                        </div>
+                    </div>
+                    <br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="player">
+
+            <div class="songthmb">
+                <img src="assets/album_picture.jpeg" class="dayimg">
+                <div class="daylight">
+                    <h4>Daylight</h4>
+                    <p>David Kushner</p>
+                </div>
+                <img src="assets/album_icon1.png" class="heart">
+                <img src="assets/album_icon2.png" class="miniP">
+            </div>
+
+            <div class="navbot">
+                <div class="bottext">
+                    <span class="btext"><i class="fa-solid fa-shuffle"></i></span>
+                    <span class="btext"><i class="fa-solid fa-backward-step"></i></span>
+                    <span class="btext play"><i class="fa-solid fa-circle-play"></i></i></span>
+                    <span class="btext"><i class="fa-solid fa-forward-step"></i></span>
+                    <span class="btext btext2"><span class="material-symbols-outlined">repeat</span></span>
+                </div>
+                <div class="slide">
+                    <p class="time">1:47</p>
+                    <div>
+                        <!-- <div class="line"><div class="slider"></div></div> -->
+                        <input class="line" type="range" min="0" max="100">
+                        <div class="slider"></div>
+                    </div>
+                    <p class="time">3:23</p>
+                </div>
+            </div>
+
+            <div class="volume">
+                <img src="assets/controls_icon1.png" class="control1 vol">
+                <img src="assets/controld_icon2.png" class="control1 vol">
+                <img src="assets/controls_icon3.png" class="control2 vol">
+                <img src="assets/controls_icon4.png" class="control3 vol">
+                <img src="assets/controls_icon5.png" class="control1 vol">
+                <div class="line linev">
+                <div class="slider sliderv"></div>
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
